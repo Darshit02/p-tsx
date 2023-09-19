@@ -57,18 +57,18 @@ const Design = () => {
         },
       ];
   return (
-    <div className='grid grid-cols-2  gap-5 md:grid-cols-3 xl:grid-cols-3'>
+    <div className='grid grid-cols-1 gap-5 md:grid-cols-3 xl:grid-cols-3'>
       {
         UI.map((item) => (
           <>
           <Card className="py-4 w-full h-full">
-          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+          <CardHeader className="pb-5 pt-2 px-4 flex-col items-start">
             <p className="text-tiny uppercase font-bold">
               {item.name}
             </p>
             
           </CardHeader>
-          <CardBody className="overflow-visible py-2">
+          <CardBody className="overflow-visible py-2 flex justify-center items-center">
             <Image
               alt="Card background"
               className="object-cover rounded-xl mb-5"
@@ -77,10 +77,10 @@ const Design = () => {
             />
             <small className="text-default-500 mb-4">{item.teach}</small>
             <h4 className="font-bold text-large">{item.description}</h4>
+          </CardBody>
             <a href={item.source_code_link} className='mt-2'>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  className="lucide lucide-figma"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
             </a>
-          </CardBody>
         </Card>
         </>
         ))

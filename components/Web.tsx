@@ -140,18 +140,18 @@ const Web = () => {
   ];
   
   return (
-    <div className='grid grid-cols-2 gap-5 md:grid-cols-3 xl:grid-cols-3 '>
+    <div className='grid grid-cols-1 gap-5 md:grid-cols-3 xl:grid-cols-3 '>
       {
         projects.map((item) => (
           <>
-          <Card className="py-4 w-full h-full">
-          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+          <Card className=" py-4 w-full h-full">
+          <CardHeader className="pb-5 pt-2 px-4 flex-col items-start">
             <p className="text-tiny uppercase font-bold">
               {item.name}
             </p>
             
           </CardHeader>
-          <CardBody className="overflow-visible py-2">
+          <CardBody className="overflow-visible py-2 flex flex-col items-center">
             <Image
               alt="Card background"
               className="object-cover rounded-xl mb-5"

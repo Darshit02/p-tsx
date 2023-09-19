@@ -9,13 +9,13 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import About from "@/components/about";
 import Skill from "@/components/skill";
 import Project from "@/components/project";
-import Blog from "@/components/blog";
 import Testimonial from "@/components/testimonial";
 import Contect from "@/components/Contect";
 
 export default function Home() {
   return (
     <>
+    <div className="flex flex-col justify-center items-center gap-[10rem]">
       <section className="flex flex-col items-center justify-center gap-4 mt-10 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
           <h1 className={title()}>Hi&nbsp;</h1>
@@ -44,23 +44,24 @@ export default function Home() {
           <Snippet hideSymbol hideCopyButton variant="flat">
             <span>
               Coding like poetry should be&nbsp;
-              <Code color="primary"> short and concise</Code>
+              <Code color="primary"> short.</Code>
             </span>
           </Snippet>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center gap-4 py-[17rem] md:py-[17rem]">
+      <section className="flex flex-col items-center justify-center gap-4">
         <About />
       </section>
       <section className="flex flex-col items-center justify-center gap-4 pt-10">
         <Skill />
       </section>
-      <section className="flex flex-col items-center justify-center py-[17rem] md:py-[17rem]">
+      <section className="flex flex-col items-center justify-center">
         <Project />
       </section>
       <section className="flex flex-col items-center justify-center ">
         <Testimonial />
       </section>
+      </div>
       <section className="flex flex-col items-center justify-center py-[17rem] md:py-[17rem]">
         <Contect />
       </section>
