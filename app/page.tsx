@@ -11,6 +11,7 @@ import Skill from "@/components/skill";
 import Project from "@/components/project";
 import Testimonial from "@/components/testimonial";
 import Contect from "@/components/Contect";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -65,6 +66,7 @@ export default function Home() {
       <section className="flex flex-col items-center justify-center py-[17rem] md:py-[17rem]">
         <Contect />
       </section>
+      <Footer/>
     </>
   );
 }
