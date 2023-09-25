@@ -10,6 +10,7 @@ import next from "@/public/icons8-nextjs.svg"
 import mongodb from "@/public/icons8-mongodb.svg"
 import graph from "@/public/icons8-graphql.svg"
 import git from "@/public/icons8-git.svg"
+import typeScript from "@/public/typeScript.png"
 
 import React from 'react'
 import Image from "next/image";
@@ -51,6 +52,10 @@ const Skill = () => {
         {
             icon : mongodb,
             name : "MongoDB" ,
+        },
+        {
+            icon : typeScript,
+            name : "TypeScript"
         },
         {
             icon : graph,
