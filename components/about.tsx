@@ -45,7 +45,7 @@ const About = () => {
         </div>
       </div>
       {/* Buttton */}
-      <a href="/public/Mistry_Darshit_Resume_08-09-2023-21-31-55.pdf" download>
+      <a href="/public/resume.pdf" download>
         <Tooltip
           showArrow
           placement="right"
